@@ -19,7 +19,7 @@ const resolvers = {
 
 // A bundle passed to server to tell it what API operations are accepted and how to resolve them
 const server = new GraphQLServer({
-    typeDefs: './src/schema.graphql',
+    typeDefs: 'schema.graphql',
     resolvers,
     context: request => {
         return { 
